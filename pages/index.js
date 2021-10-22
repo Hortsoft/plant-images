@@ -19,7 +19,7 @@ export default function Home() {
  
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-         <Image src="/images/Orange_tree.jpg" width="800" height="500" alt="ornage tree" />
+         <Image src="/images/bird_1.jpg" width="800" height="500" alt="ornage tree" />
            
         </div>
       </main>

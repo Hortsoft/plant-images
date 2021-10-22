@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:3001",
+  "testFiles": "**/*.{feature,features}",
+  "projectId": "4htfjx",
+  "viewportWidth": 1440,
+  "viewportHeight": 900
+}
