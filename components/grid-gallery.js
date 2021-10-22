@@ -1,18 +1,13 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"; 
 
 export default function GridGallery({ images }) {
   return (
     <div className="grid grid-cols-3 gap-4">
       {images &&
         images.map((imageUrl) => (
-          <Image
+          <img
             src={imageUrl}
-            width={16}
-            height={9}
-            alt=""
-            layout="responsive"
-            quality={95}
+             
           />
         ))}
     </div>
