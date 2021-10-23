@@ -1,6 +1,7 @@
 import GridGallery from "../components/grid-gallery";
 
 export default function Gallery() {
+
   const images = [
      "/images/bird_1.jpg",
      "/images/bird_2.jpg",
@@ -41,6 +42,6 @@ export default function Gallery() {
      "/images/bird_37.jpg",
      "/images/bird_38.jpg",
   ];
-console.log(images);
+ 
     return  <GridGallery images={images} />
 }

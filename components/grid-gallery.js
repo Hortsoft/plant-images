@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "next/image";
+
 export default function GridGallery({ images }) {
   return (
     <div className="grid grid-cols-3 gap-4">
