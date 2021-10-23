@@ -6,6 +6,7 @@ export default function GridGallery({ images }) {
       {images &&
         images.map((imageUrl) => (
           <Image
+          key={imageUrl}
             src={imageUrl}
             alt="Picture of something nice"
             width={16}
