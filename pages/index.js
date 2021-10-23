@@ -1,7 +1,31 @@
-import Head from 'next/head'
-import Image from 'next/image';
+import Head from "next/head";
+import Image from "next/image";
+import GridGallery from "../components/grid-gallery";
 
 export default function Home() {
+  const images = [
+    "/images/bird_1.jpg",
+    "/images/bird_2.jpg",
+    "/images/bird_3.jpg",
+    "/images/bird_4.jpg",
+    "/images/bird_5.jpg",
+    "/images/bird_6.jpg",
+    "/images/bird_7.jpg",
+    "/images/bird_8.jpg",
+    "/images/bird_9.jpg",
+    "/images/bird_10.jpg",
+    "/images/bird_11.jpg",
+    "/images/bird_12.jpg",
+    "/images/bird_13.jpg",
+    "/images/bird_14.jpg",
+    "/images/bird_15.jpg",
+    "/images/bird_16.jpg",
+    "/images/bird_17.jpg",
+    "/images/bird_18.jpg",
+    "/images/bird_19.jpg",
+    "/images/bird_20.jpg",
+  ];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -10,18 +34,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Plant Images (and more)
-          </a>
-        </h1>
- 
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-         <Image src="/images/bird_1.jpg" width="800" height="500" alt="ornage tree" />
-           
-        </div>
+        <GridGallery images={images} />
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
@@ -31,10 +44,10 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/leaf-g.svg" alt="our Logo" className="h-4 ml-2" />
         </a>
       </footer>
     </div>
-  )
+  );
 }
