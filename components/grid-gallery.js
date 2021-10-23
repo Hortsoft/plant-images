@@ -4,7 +4,7 @@ export default function GridGallery({ images }) {
   return (
     <div className="grid grid-cols-3 gap-4">
       {images &&
-        images.map((imageUrl) => (
+        images.map((imageUrl) =>  
           <Image
           key={imageUrl}
             src={imageUrl}
@@ -14,7 +14,7 @@ export default function GridGallery({ images }) {
             layout="responsive"
             quality={65}
           />
-        ))}
+        )}
     </div>
   );
 }
