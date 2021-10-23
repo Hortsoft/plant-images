@@ -1,7 +1,5 @@
-import Head from "next/head";
-import Image from "next/image";
-import GridGallery from "../components/grid-gallery";
-
+import Head from "next/head"; 
+ 
 export default function Home() {
 
 
@@ -13,7 +11,11 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        {/* <GridGallery images={images} /> */}
+        <div className="max-w-sm rounded overflow-hidden shadlow-lg">
+        <img src="./images/bird_1.jpg" alt="" className="w-full" />
+          </div>
+
+
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
