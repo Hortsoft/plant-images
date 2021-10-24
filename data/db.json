@@ -1,0 +1,51 @@
+{
+    "webimages": [
+      {
+        "name": "Tui Image 1.",
+        "img": "./images/bird_1.jpg"
+      },
+      {
+        "name": "Tui Image 2.",
+        "img": "../images/bird_2.jpg"
+      },
+      {
+        "name": "Tui Image 3",
+        "img": "../images/bird_3.jpg"
+        
+      },
+      {
+        "name": "Tui Image 4.",
+        "img": "../images/bird_4.jpg"
+      },
+      {
+        "name": "Tui Image 2.",
+        "img": "../images/bird_5.jpg"
+      },
+      {
+        "name": "Tui Image 6",
+        "img": "../images/bird_6.jpg"
+      },  {
+        "name": "Tui Image 7.",
+        "img": "../images/bird_7.jpg"
+      },
+      {
+        "name": "Tui Image 8.",
+        "img": "../images/bird_8.jpg"
+      },
+      {
+        "name": "Tui Image 9",
+        "img": "../images/bird_9.jpg"
+      },  {
+        "name": "Tui Image 10.",
+        "img": "../images/bird_10.jpg"
+      },
+      {
+        "name": "Tui Image 11.",
+        "img": "../images/bird_11.jpg"
+      },
+      {
+        "name": "Tui Image 12",
+        "img": "../images/bird_12.jpg"
+      }
+    ]
+  }
