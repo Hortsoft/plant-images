@@ -32,7 +32,7 @@ const ImageCard = ({ image }) => {
             </span>
           </div>
         </div>
-    )
+    );
 }
 
 export default ImageCard;

@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
+//import ImageGallery from "../components/imagegallery";
+// in the future put the data connection into own component
 import ImageCard from "../components/imagecard";
+import { imageList } from "../data/data";
 
-export default function Home() {
-  const [images, setImages] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [term, setTerm] = useState("");
+export const getStaticProps = async () => {
+ 
+  return {
+    props: { 
+      images: imageList,
+    },
+  }
+}
 
-  useEffect(async () => {
-    fetch("../data/db.json")
-      .then(res => {
-        return res.json()
-      })
-    .then(data => {
-         setImages(data);
-        isLoading(false);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
+export default function Home({images}) {
+ 
+   
+      
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
@@ -28,13 +27,15 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <div className="container mx-auto">
+         
+      <div className="container mx-auto">
           <div className="grid grid-cols-4 gap-4">
-            {images && images.map((image) => (
+            {images && images.length>0 && images.map((image) => (
               <ImageCard key={image.id} image={image} />
             ))}
           </div>
         </div>
+        
       </main>
 
       <footer className="flex items-center justify-center w-full h-24 border-t">
