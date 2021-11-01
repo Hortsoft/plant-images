@@ -6,7 +6,7 @@ const ImageCard = ({ image }) => {
           <img src={image.url} alt="" className="w-full" />
           <div className="px-6 py-4">
             <div className="font-bold text-purple-500 text-xl mb-2">
-              Photo by The Boys
+              {image.name}
             </div>
              
           </div>
