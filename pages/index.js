@@ -5,6 +5,7 @@ import Head from "next/head";
 // in the future put the data connection into own component
 import ImageCard from "../components/imagecard";
 import { imageList } from "../data/data";
+import Navbar from "../components/Navbar";
 
 export const getStaticProps = async () => {
  
@@ -25,7 +26,7 @@ export default function Home({images}) {
         <title>Plant Images App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+<Navbar />
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
          
       <div className="container mx-auto">
