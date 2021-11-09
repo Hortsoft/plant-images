@@ -17,7 +17,7 @@ export const getStaticProps = async () => {
      return (
         <div>
           <div className="container mx-auto">
-          <div className="grid grid-cols-4 gap-1">
+          <div className="grid grid-cols-4 md:grid-cols-6 gap-1">
             {images && images.length>0 && images.map((image) => (
               <ImageCard key={image.id} image={image} />
             ))}
