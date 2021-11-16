@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
-
+import SimpleReactLightbox from 'simple-react-lightbox'
 //import ImageGallery from "../components/imagegallery";
 // in the future put the data connection into own component
 import ImageCard from "../components/imagecard";
@@ -30,11 +30,13 @@ export default function Home({images}) {
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
          
       <div className="container mx-auto">
+      <SimpleReactLightbox>
           <div className="grid grid-cols-4 gap-4">
             {images && images.length>0 && images.map((image) => (
               <ImageCard key={image.id} image={image} />
             ))}
           </div>
+          </SimpleReactLightbox>
         </div>
         
       </main>
